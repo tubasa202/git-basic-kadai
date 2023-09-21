@@ -1,0 +1,66 @@
+owner@DESKTOP-GFMFUIG MINGW64 ~
+$ mkdir git_challenge
+
+owner@DESKTOP-GFMFUIG MINGW64 ~
+$ cd "C:\Users\owner\git_challenge"
+
+owner@DESKTOP-GFMFUIG MINGW64 ~/git_challenge
+$ mkdir hello_world.txt
+
+owner@DESKTOP-GFMFUIG MINGW64 ~/git_challenge
+$ git init
+Initialized empty Git repository in C:/Users/owner/git_challenge/.git/
+
+owner@DESKTOP-GFMFUIG MINGW64 ~/git_challenge (main)
+$ git add "C:\Users\owner\git_challenge\hello_world.txt.txt"
+
+owner@DESKTOP-GFMFUIG MINGW64 ~/git_challenge (main)
+$ git commit -m "hello_world.txtを追加"
+[main (root-commit) 3067e76] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt.txt
+
+owner@DESKTOP-GFMFUIG MINGW64 ~/git_challenge (main)
+$ git log
+commit 3067e76157aedf98a5d074e8d364163330a2f863 (HEAD -> main)
+Author: tubasa202 <tubasa13171225@gmail.com>
+Date:   Thu Sep 21 13:43:22 2023 +0900
+
+    hello_world.txtを追加
+
+owner@DESKTOP-GFMFUIG MINGW64 ~/git_challenge (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   hello_world.txt.txt
+
+owner@DESKTOP-GFMFUIG MINGW64 ~/git_challenge (main)
+$ git add "C:\Users\owner\git_challenge\hello_world.txt.txt"
+
+owner@DESKTOP-GFMFUIG MINGW64 ~/git_challenge (main)
+$ git commit -m "日本語訳を追記"
+[main d3d57fe] 日本語訳を追記
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+owner@DESKTOP-GFMFUIG MINGW64 ~/git_challenge (main)
+$ git log
+commit d3d57fefb6b1deed039126650eb522c1f8332708 (HEAD -> main)
+Author: tubasa202 <tubasa13171225@gmail.com>
+Date:   Thu Sep 21 13:57:26 2023 +0900
+
+    日本語訳を追記
+
+commit 3067e76157aedf98a5d074e8d364163330a2f863
+Author: tubasa202 <tubasa13171225@gmail.com>
+Date:   Thu Sep 21 13:43:22 2023 +0900
+
+    hello_world.txtを追加
+
+owner@DESKTOP-GFMFUIG MINGW64 ~/git_challenge (main)
+$ git log --oneline
+d3d57fe (HEAD -> main) 日本語訳を追記
+3067e76 hello_world.txtを追加
+
+owner@DESKTOP-GFMFUIG MINGW64 ~/git_challenge (main)
+$
